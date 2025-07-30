@@ -1,0 +1,279 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    max-width: 1800px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-family: "Sour Gummy", sans-serif;
+    font-style: italic;
+}
+.header{    
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 35px;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    border-bottom: 2px solid #ccc;
+}
+.header span{
+    color: white;
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.whats-header{
+    position: absolute;
+    right: 1%;
+    top: 22%;
+    z-index: 999;
+}
+.whats-header img{
+    width: 35px;
+    height: auto;
+    transition: 0.3s;
+
+    
+}
+.whats-header img:hover{
+    transform: scale(1.2);
+}   
+.modulo_principal p{
+    font-size: 35px;
+}
+.botones_redireccion{
+    display: flex;
+    justify-content: center;
+    gap: 85px;
+    padding-top: 9px;
+    list-style: none;    
+}
+/*.modulo_preguntas{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 14px;
+    margin-bottom: 0;
+    border-top: 2px solid #ccc;
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    box-sizing: border-box;
+}*/
+.container h1{
+    font-size: 52px;
+}
+.container h2{
+    background: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+.container h2, p{
+    padding: 10px;
+    text-align: left;
+}
+.layout-preguntas{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 40px 20px;
+    background: linear-gradient(to right, #ffffff, #f0f8ff);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+    max-width: 1200px;
+    margin: 40px auto;
+}
+.contenido-texto{
+    flex: 2;
+    min-width: 300px;
+    padding-right: 20px;
+}
+.contenido-texto h2{
+    color: #1abc9c;
+    margin-top: 30px;
+}
+.contenido-texto p{
+    color: #333;
+    line-height: 1.6;
+}
+.widget-lateral{
+    flex: 1;
+    min-width: 280px;
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.widget-lateral img{
+    width: 100%;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+.enlaces-widget ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.enlaces-widget li {
+    margin: 10px 0;
+}
+
+.enlaces-widget a {
+    text-decoration: none;
+    color: #1abc9c;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.enlaces-widget a:hover{
+    color: #16a085;
+}
+.info-widget {
+    font-size: 14px;
+    color: #555;
+}
+.info-widget p{
+    font-size: 14px;
+    color: #555;
+    line-height: 1.4;
+}
+@media screen and (max-width: 768px) {
+.layout-preguntas {
+    flex-direction: column;
+}
+.widget-lateral, .contenido-texto {
+    width: 100%;
+}
+}
+@media screen and (max-width: 480px){
+    .contenido-texto h2{
+        font-size: 20px;
+    }
+    .contenido-texto p, .info-widget p{
+        font-size: 15px;
+    }
+    .widget-lateral img{
+        max-width: 90%;
+        margin: auto;
+    }
+}
+@media screen and (max-width: 768px) {
+    .layout-preguntas {
+        padding: 20px;
+        gap: 20px;
+    }
+}
+.button-29 {
+  font-family: "Sour Gummy", serif;
+  align-items: center;
+  appearance: none;
+  background-image: radial-gradient(100% 100% at 100% 0, #5adaff 0, #5468ff 100%);
+  border: 0;
+  border-radius: 6px;
+  box-shadow: rgba(45, 35, 66, .4) 0 2px 4px,rgba(45, 35, 66, .3) 0 7px 13px -3px,rgba(58, 65, 111, .5) 0 -3px 0 inset;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  height: 88%;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button-29:focus {
+  box-shadow: #3c4fe0 0 0 0 1.5px inset, rgba(45, 35, 66, .4) 0 2px 4px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+}
+
+.button-29:hover {
+  box-shadow: rgba(45, 35, 66, .4) 0 4px 8px, rgba(45, 35, 66, .3) 0 7px 13px -3px, #3c4fe0 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-29:active {
+  box-shadow: #3c4fe0 0 3px 7px inset;
+  transform: translateY(2px);
+}
+/* Menú desplegable */
+.menu-mobile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.boton-menu {
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.menu-desplegable {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.menu-desplegable ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.menu-desplegable li {
+  margin-bottom: 10px;
+}
+
+.menu-desplegable a {
+  text-decoration: none;
+  color: #1abc9c;
+  font-weight: bold;
+}
+
+.menu-desplegable a:hover {
+  color: #16a085;
+}
+
+/* Título centrado entre menú y WhatsApp */
+.titulo-header {
+  flex-grow: 1;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}

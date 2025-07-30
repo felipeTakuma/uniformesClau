@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,684;1,684&display=swap" rel="stylesheet">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- Swiper JS (al final del body también puedes ponerlo) -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <title>UNIFORMES DOC</title>
+</head>
+<body>
+    <header class="header">
+        <div class="menu-mobile">
+            <button id="boton-menu" class="boton-menu">&#9776;</button>
+            <nav id="menu-desplegable" class="menu-desplegable">
+                <ul>
+                    <li><a href="../archivos/indexMujer.html">Catálogo Mujeres</a></li>
+                    <li><a href="../archivos/indexHombre.html">Catálogo Hombres</a></li>
+                    <li><a href="#modulo_preguntas">Preguntas frecuentes</a></li>
+                </ul>
+            </nav>
+        </div>
+        <a href="../archivos/index.html" class="titulo-header"><span>UNIFORMES CLAU</span></a>
+        <div class="whats-header">
+            <a href="https://wa.me/573203341083" target="_blank" class="fi fi-brands-whatsapp">
+                <img src="../img/imagenes/whatsapp2.png" alt="">
+            </a>
+        </div>
+</header>
+    <div class="container">
+        <div class="modulos">
+                <section id="modulo_principal" class="modulo_principal">
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img src="../img/imagenes/slider_m3.png" alt="Uniforme 1"></div>
+                                <div class="swiper-slide"><img src="../img/imagenes/slider_m2.png" alt="Uniforme 2"></div>
+                                <div class="swiper-slide"><img src="../img/imagenes/slider_h.png" alt="Uniforme 4"></div>
+                                <div class="swiper-slide"><img src="../img/imagenes/slider_h2.png" alt="Uniforme 5"></div>
+                            </div>
+
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    <p>La mejor calidad en uniformes.</p>
+                    <div class="image-container" style="text-align: left;">
+                        <img src="../img/imagenes/unif_lafallet.png" alt="" class="base-image" style="border-radius: 15px; width: 400px;">
+                        <div class="reviews-slider-overlay">
+                            <div class="reviews-slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <blockquote class="review">
+                                            "Una calidad excelente y la atencion es increible."
+                                            <span class="reviewer">Doctora Carolina</span>
+                                        </blockquote>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <blockquote class="review">
+                                            "Me encanto el uniforme, muy comodo y por su precio, la mejor calidad."
+                                            <span class="reviewer">Doctora Martinez</span>
+                                        </blockquote>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <blockquote class="review">
+                                            "Los uniformes que he comprado me han salido excelente, muchos exitos."
+                                            <span class="reviewer">Doctor Martin Gomez</span>
+                                        </blockquote>
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <p>Para personal de salud</p>
+                    </div>
+                    <div style="text-align: right;">
+                        <img src="../img/imagenes/unif_animados.png" alt="" style="border-radius: 15px; width: 530px;">
+                        <p>Para docentes</p>
+
+                    </div>
+                </section>
+        </div>
+    </div>
+
+    <script>
+        const swiper = new Swiper(".mySwiper", {
+            loop: true,
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+    <script>
+        const swiperResenas = new Swiper(".reviews-slider", {
+            loop: true,
+            autoplay: {
+                delay: 4000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+        });
+    </script>
+    <script>
+    const botonMenu = document.getElementById('boton-menu');
+    const menuDesplegable = document.getElementById('menu-desplegable');
+
+    botonMenu.addEventListener('click', (e) => {
+        e.stopPropagation(); // Evita que el boton se propague
+        const estado = menuDesplegable.style.display;
+        menuDesplegable.style.display = estado === 'block' ? 'none' : 'block'
+    });
+    document.addEventListener('click', (e) => {
+        // Cierra el menú si se hace clic fuera de él
+        if(!menuDesplegable.contains(e.target) && e.target !== botonMenu){
+            menuDesplegable.style.display = 'none';
+        }
+    });
+</script> 
+</body>
+</html>
