@@ -3,7 +3,6 @@ body{
     padding: 0;
   }
 .container{
-    justify-content: center;
     max-width: 1200px;
     margin: 0;
     padding: 0;
@@ -86,8 +85,9 @@ flex-direction: column;
 align-items: center;
 }
 .reviews-slider{
-  max-width: 400px;
-  margin: 50px auto;
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
   padding: 20px;
   background-color: #f9f9f9;
   border-radius: 15px;
