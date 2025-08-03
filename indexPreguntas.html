@@ -63,8 +63,8 @@
                     </div>
                         -->
                         <h2>¿Puedo pedir el pantalon y la camisa de distintas tallas?</h2>
-                        <p>No, no es posible hacer el pedido en talla distinta de pantalon y camisa
-                        si es para el mismo pedido, por lo que si deseas ordenar un producto, deberás hacerlo en tallas iguales.</p>
+                        <p>Si, si es posible hacer el pedido en talla distinta de pantalon y camisa,
+                        por lo que te ofrecemos una mayor comodidad y flexibilidad en la compra.</p>
 
                         <h2>¿Que tipos de medio de pago recibimos?</h2>
                         <p>Actualmente aceptamos transferencias bancarias(Daviplata, MiBancolombia, Nequi y e.t.c)
@@ -96,5 +96,31 @@
             </div>
         </div>  
     </div>
+    <script>
+        //aca obtenemos el boton del menu por su id
+        const botonMenu = document.getElementById('boton-menu');
+
+        //aca obtenemos el menu desplegable por su id
+        const menuDesplegable = document.getElementById('menu-desplegable');
+
+        //al hacer click en el logo de menu, se despliega el menu
+        botonMenu.addEventListener('click', (e) =>{
+            e.stopPropagation(); // Evita que el boton se propague
+            menuDesplegable.style.display;
+            const estado = menuDesplegable.style.display;
+
+            //si el menu esta desplegado, se oculta, si no, se muestra
+            menuDesplegable.style.display = estado === 'block' ? 'none' : 'block';
+        });
+
+
+        // Cierra el menú si se hace clic fuera de él
+        document.addEventListener('click', (e) => {
+            if ( !menuDesplegable.contains(e.target) && e.target !== botonMenu){
+                // Si el clic no es dentro del menú ni en el botón, oculta el menú
+                menuDesplegable.style.display = 'none';
+            }
+        });
+    </script>
 </body>
 </html>
