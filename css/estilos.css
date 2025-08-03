@@ -102,19 +102,6 @@ body{
   font-weight: bold;
   color: #5468ff;
 }
-.image-container{
-  position: relative;
-  max-width: 900px;
-  margin: 0 auto;
-  width: 100%;
-}
-.base-image{
-  width: 100%;
-  max-width: 400Px;
-  height: auto;
-  display: block;
-  object-fit: contain;
-}
 /*Ajustes para que sea RESPONSIVE*/
 @media screen and (max-width: 768px){
   .image-container{
@@ -137,8 +124,8 @@ body{
 .reviews-slider-overlay{
   position: relative;
   width: 100%;
-  top: 42%;
-  left: 79%;
+  top: 50%;
+  left: 60%;
   transform: translate(-50%, -50%);
   width: 300px;
   padding: 20px;
@@ -201,7 +188,7 @@ body{
 }
 
 .swiper-slide img {
-  width: 30%;
+  width: 36%;
   height: auto;
   border-radius: 10px;
 }
