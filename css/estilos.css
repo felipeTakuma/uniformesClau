@@ -13,6 +13,9 @@ body{
     font-family: "Sour Gummy", sans-serif;
     font-style: italic;
 }
+header{
+  width: 100%;
+}
 .header{
     display: flex;
     position: relative;
@@ -191,7 +194,7 @@ body{
 }
 
 .swiper {
-  width: 70%;
+  width: 50%;
   max-width: 700px;
   height: auto;
   margin: auto;
@@ -204,7 +207,6 @@ body{
   width: 30%;
   height: auto;
   border-radius: 10px;
-  object-fit: cover;
 }
 /* Menú desplegable */
 .menu-mobile {
