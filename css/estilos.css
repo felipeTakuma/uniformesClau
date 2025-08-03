@@ -182,8 +182,7 @@ align-items: center;
 }
 
 .swiper {
-  justify-content: center;
-  width: 85%;
+  width: 55%;
   max-width: 700px;
   height: auto;
   margin: auto;
@@ -193,7 +192,7 @@ align-items: center;
 }
 
 .swiper-slide img {
-  width: 42%;
+  width: 37%;
   height: auto;
   border-radius: 10px;
 }
