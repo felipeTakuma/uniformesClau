@@ -4,7 +4,7 @@ body{
   }
 .container{
     justify-content: center;
-    max-width: 1800px;
+    max-width: 1200px;
     margin: 0;
     padding: 0;
     display: flex;
@@ -81,7 +81,7 @@ body{
   color: transparent;
 }
 .reviews-slider{
-  max-width: 500px;
+  max-width: 400px;
   margin: 0px auto;
   padding: 20px;
   background-color: #f9f9f9;
@@ -97,7 +97,7 @@ body{
   color: #555;
 }
 .reviewer {
-  display: flex;
+  display: block;
   margin-top: 10px;
   font-weight: bold;
   color: #5468ff;
@@ -125,8 +125,6 @@ body{
   justify-content: center;
   position: relative;
   width: 100%;
-  top: 50%;
-  left: 60%;
   transform: translate(-50%, -50%);
   width: 300px;
   padding: 20px;
