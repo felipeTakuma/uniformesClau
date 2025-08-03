@@ -13,6 +13,11 @@ body{
     font-family: "Sour Gummy", sans-serif;
     font-style: italic;
 }
+header{
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+}
 .header{
     display: flex;
     position: relative;
@@ -28,6 +33,7 @@ body{
 }
 .header h1{
     color: white;
+    text-align: center;
     margin-top: 0;
     padding-top: 0;
     margin-bottom: 0;
@@ -81,8 +87,8 @@ body{
 }
 .reviews-slider{
   max-width: 300px;
-  margin: 50px auto;
-  padding: 20px;
+  margin: 30px auto;
+  padding: 15px;
   background-color: #f9f9f9;
   border-radius: 15px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
@@ -109,9 +115,10 @@ body{
 }
 .base-image{
   width: 100%;
+  max-width: 400Px;
   height: auto;
   display: block;
-  object-fit: contain;
+  object-fit: cover;
 }
 /*Ajustes para que sea RESPONSIVE*/
 @media screen and (max-width: 768px){
@@ -124,9 +131,17 @@ body{
     height: auto;
     object-fit: contain;
   }
+  .reviews-slider-overlay{
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    padding: 15px;
+  }
 }
 .reviews-slider-overlay{
-  position: absolute;
+  position: relative;
+  width: 100%;
   top: 42%;
   left: 79%;
   transform: translate(-50%, -50%);
@@ -191,9 +206,10 @@ body{
 }
 
 .swiper-slide img {
-  width: 38%;
+  width: 100%;
   height: auto;
   border-radius: 10px;
+  object-fit: cover;
 }
 /* Menú desplegable */
 .menu-mobile {
