@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/uniformesClau/css/estilos.css">
+    <link rel="stylesheet" href="/pruebasUniformesClau/css/estilos.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sour+Gummy:ital,wght@0,684;1,684&display=swap" rel="stylesheet">
@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Swiper JS (al final del body también puedes ponerlo) -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <title>UNIFORMES CLAU</title>
+    <title>PRUEBAS UNIFORMES CLAU</title>
 </head>
 <body>
     <header class="header" style="width: 100%;">
@@ -19,20 +19,22 @@
             <button id="boton-menu" class="boton-menu">&#9776;</button>
             <nav id="menu-desplegable" class="menu-desplegable">
                 <ul>
-                    <li><a href="/uniformesClau/indexMujer.html">Catálogo Mujeres</a></li>
-                    <li><a href="/uniformesClau/indexHombre.html">Catálogo Hombres</a></li>
-                    <li><a href="/uniformesClau/indexPreguntas.html">Preguntas frecuentes</a></li>
+                    <li><a href="/pruebasUniformesClau/indexMujer.html">Catálogo Mujeres</a></li>
+                    <li><a href="/pruebasUniformesClau/indexHombre.html">Catálogo Hombres</a></li>
+                    <li><a href="/pruebasUniformesClau/indexPreguntas.html">Preguntas frecuentes</a></li>
                 </ul>
             </nav>
         </div>
-        <a href="/uniformesClau/index.html" class="titulo-header"><span>UNIFORMES CLAU</span></a>
+        <a href="/pruebasUniformesClau/index.html" class="titulo-header"><span>UNIFORMES CLAU</span></a>
         <div class="whats-header">
             <a href="https://wa.me/573203341083" target="_blank" class="fi fi-brands-whatsapp">
-                <img src="/uniformesClau/img/imagenes/whatsapp2.png" alt="">
+                <img src="/pruebasUniformesClau/img/imagenes/whatsapp2.png" alt="">
             </a>
         </div>
     </header>
     <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+        
+                <!--<section id="modulo_principal" class="modulo_principal">-->
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide"><img src="/pruebasUniformesClau/img/imagenes/slider_m3.png" alt="Uniforme 1"></div>
@@ -40,12 +42,41 @@
                                 <div class="swiper-slide"><img src="/pruebasUniformesClau/img/imagenes/slider_h.png" alt="Uniforme 4"></div>
                                 <div class="swiper-slide"><img src="/pruebasUniformesClau/img/imagenes/slider_h2.png" alt="Uniforme 5"></div>
                             </div>
+
                             <div class="swiper-pagination"></div>
                         </div>
                 <!--</section>
                 <section class="modulo_resenas">-->
                     <div>
                         <p>La mejor calidad en uniformes.</p>
+                    </div>
+                    <!--contenedor principal con las dos tarjetas hacia los catalogos-->
+                    <div class="catalogo-selector">
+                        <!--Tarjeta que lleva al catalogo de mujer-->
+                        <div class="catalogo-card">
+                            <a href="/pruebasUniformesClau/indexMujer.html">
+                                <!--imagen responsive optimizada en WebP-->
+                                <picture class="mPicture">
+                                    <source media="(min-width: 576px)" srcset="/pruebasUniformesClau/img/imagenes/cat_m1.webp"/>
+                                    <img src="/pruebasUniformesClau/img/uniformes_m/cat_m1.png">
+                                </picture>
+                                <!-- boton superpuesto encargado de redirigir -->
+                                <div class="mOver">
+                                        <button class="mBtnHover" type="button">Mujeres</button>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="catalogo-card">
+                            <a href="/pruebasUniformesClau/indexHombre.html">
+                                <picture class="mPicture">
+                                    <source media="(min-width: 576px)" srcset="/pruebasUniformesClau/img/imagenes/cat_h2.webp"/>
+                                    <img src="/pruebasUniformesClau/img/uniformes_h/cat_h2.png" alt="">
+                                </picture>
+                                <div class="mOver">
+                                        <button class="mBtnHover" type="button">Hombres</button>
+                                </div>
+                            </a>
+                        </div>
                     </div>
                     <div class="detalles_talla">
                         <details>
@@ -59,7 +90,6 @@
                                     <img src="/pruebasUniformesClau/img/imagenes/ref_tallaje.png" alt="">
                                 </div>          
                             </div>
-                            
                         </details>
                     </div>
                     <!--<div>
@@ -91,6 +121,7 @@
                     </div>
                 </section>-->
     </div>
+
     <script>
         const swiper = new Swiper(".mySwiper", {
             loop: true,
