@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <!-- Swiper JS (al final del body también puedes ponerlo) -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <title>UNIFORMES CLAU</title>
+    <title>PRUEBAS UNIFORMES CLAU</title>
 </head>
 <body>
     <header class="header" style="width: 100%;">
@@ -33,13 +33,16 @@
         </div>
     </header>
     <div class="container" style="display: flex; flex-direction: column; align-items: center;">
+        
+                <!--<section id="modulo_principal" class="modulo_principal">-->
                         <div class="swiper mySwiper">
                             <div class="swiper-wrapper">
-                                <div class="swiper-slide"><img src="/pruebasUniformesClau/img/imagenes/slider_m3.png" alt="Uniforme 1"></div>
-                                <div class="swiper-slide"><img src="/pruebasUniformesClau/img/imagenes/slider_m2.png" alt="Uniforme 2"></div>
-                                <div class="swiper-slide"><img src="/pruebasUniformesClau/img/imagenes/slider_h.png" alt="Uniforme 4"></div>
-                                <div class="swiper-slide"><img src="/pruebasUniformesClau/img/imagenes/slider_h2.png" alt="Uniforme 5"></div>
+                                <div class="swiper-slide"><img src="/uniformesClau/img/imagenes/slider_m3.png" alt="Uniforme 1"></div>
+                                <div class="swiper-slide"><img src="/uniformesClau/img/imagenes/slider_m2.png" alt="Uniforme 2"></div>
+                                <div class="swiper-slide"><img src="/uniformesClau/img/imagenes/slider_h.png" alt="Uniforme 4"></div>
+                                <div class="swiper-slide"><img src="/uniformesClau/img/imagenes/slider_h2.png" alt="Uniforme 5"></div>
                             </div>
+
                             <div class="swiper-pagination"></div>
                         </div>
                 <!--</section>
@@ -51,11 +54,11 @@
                     <div class="catalogo-selector">
                         <!--Tarjeta que lleva al catalogo de mujer-->
                         <div class="catalogo-card">
-                            <a href="/pruebasUniformesClau/indexMujer.html">
+                            <a href="/uniformesClau/indexMujer.html">
                                 <!--imagen responsive optimizada en WebP-->
                                 <picture class="mPicture">
                                     <source media="(min-width: 576px)" srcset="/pruebasUniformesClau/img/imagenes/cat_m1.webp"/>
-                                    <img src="/pruebasUniformesClau/img/uniformes_m/cat_m1.png">
+                                    <img src="/uniformesClau/img/uniformes_m/cat_m1.png">
                                 </picture>
                                 <!-- boton superpuesto encargado de redirigir -->
                                 <div class="mOver">
@@ -64,29 +67,29 @@
                             </a>
                         </div>
                         <div class="catalogo-card">
-                            <a href="/pruebasUniformesClau/indexHombre.html">
+                            <a href="/uniformesClau/indexHombre.html">
                                 <picture class="mPicture">
                                     <source media="(min-width: 576px)" srcset="/pruebasUniformesClau/img/imagenes/cat_h2.webp"/>
-                                    <img src="/pruebasUniformesClau/img/uniformes_h/cat_h2.png" alt="">
+                                    <img src="/uniformesClau/img/uniformes_h/cat_h2.png" alt="">
                                 </picture>
                                 <div class="mOver">
                                         <button class="mBtnHover" type="button">Hombres</button>
                                 </div>
                             </a>
                         </div>
+                    </div>
                     <div class="detalles_talla">
                         <details>
                             <summary>¿Conoces tu talla?</summary>
                             <p>Para conocer tu talla, te sugerimos seguir las instrucciones de nuestra guía.</p>
                             <div class="image-grid">
                                 <div class="image-item">
-                                    <img src="/pruebasUniformesClau/img/imagenes/medidas_tallaje.png" alt="">
+                                    <img src="/uniformesClau/img/imagenes/medidas_tallaje.png" alt="">
                                 </div>
                                 <div class="image-item">
-                                    <img src="/pruebasUniformesClau/img/imagenes/ref_tallaje.png" alt="">
+                                    <img src="/uniformesClau/img/imagenes/ref_tallaje.png" alt="">
                                 </div>          
                             </div>
-                            
                         </details>
                     </div>
                     <!--<div>
@@ -118,6 +121,7 @@
                     </div>
                 </section>-->
     </div>
+
     <script>
         const swiper = new Swiper(".mySwiper", {
             loop: true,
